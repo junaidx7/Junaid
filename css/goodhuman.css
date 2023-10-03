@@ -1,0 +1,267 @@
+:root {
+    --background_color: #000000;
+    --text-color: #F2E6CF;
+
+    --h1: 76px;
+    --h2: 43px;
+
+    --h5: 1.5rem;
+    --h6: 24px;
+
+
+    --heading_letterspacing: -0.05em;
+    --heading_lineheight: 1.3;
+
+    --paragraph_letterspacing: -0em;
+    --paragraph_lineheight: 1.6;
+
+    /* HSL values */    
+    --bg: 40, 58%, 88%;
+    --bg-secondary: 40, 48%, 80%;
+    --primary: 0, 0%, 12%;
+    --img: 0, 0%, 14%;
+    /* text */
+    --secondary: 41, 18%, 36%;
+    /* interactive */
+    --shadow: 40, 58%, 12%;
+    /* Progress bar */
+    --scrollPercent: 0;
+
+    --gap_xs:1rem;
+    --gap_s:1rem;
+    --gap_m:1rem;
+    --gap_l:1rem;
+    --gap_xl:1rem;
+    --gap_xxl:1rem;
+
+}
+
+@font-face {
+    font-family: 'Tofino-100';
+    src: url('/fonts/Tofino/Tofino-ThinPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-200';
+    src: url('/fonts/Tofino/Tofino-LightPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-300';
+    src: url('/fonts/Tofino/Tofino-BookPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-400';
+    src: url('/fonts/Tofino/Tofino-RegularPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-500';
+    src: url('/fonts/Tofino/Tofino-MediumPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-600';
+    src: url('/fonts/Tofino/Tofino-SemiboldPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-700';
+    src: url('/fonts/Tofino/Tofino-BoldPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-800';
+    src: url('/fonts/Tofino/Tofino-BlackPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-900';
+    src: url('/fonts/Tofino/Tofino-UltraPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+    
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #1A1A1A;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+h1 {
+    font-family: 'Tofino-600';
+    margin-top: 0.6em;
+    font-size: 7.3rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+h2 {
+    font-family: 'Tofino-600';
+
+    font-size: 4.3rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+h3 {
+    margin-top: 0.4em;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h4 {
+    margin-top: 0.4em;
+    font-size: 4rem;
+    line-height: 1.45;
+    font-weight: 600;
+    font-family: 'Tofino';
+    line-height: 1.2;
+}
+
+h5 {
+    margin-top: 0.4em;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Tofino-600';
+    margin-top: 1em;
+    font-size: 1.350rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+}
+
+.max-width {
+    max-width: 88rem;
+    margin: auto;
+}
+
+p.lede {
+    font-family: 'Tofino-300';
+    font-size: 2.4rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-family: 'Tofino-300';
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+p.bold_para {
+    font-family: 'Tofino-600';
+    font-size: 1.8rem;
+
+}
+
+li {
+    font-family: 'Tofino-300';
+    font-size: 1.8rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+
+}
+
+.fullwidth_img {
+    width: 98vw;
+    /* Set the width to 100% of the viewport width */
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.col2grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4.8rem;
+
+}
+
+a.back-link p {
+    margin-top: 8rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.gap_div{
+    height: 4rem;
+}
+
+.s-gap_div{
+    height: 1rem;
+}
+
+.feature{
+    max-width: 90vw;
+    height: calc(90vw * 9 / 18);
+    margin: auto;
+    background-color: #1a1818;
+    border-radius: 0.7rem;
+
+}
+
+.img{
+    max-width: 100vw;
+    height: calc((100vw * 9) / 15);
+    background-color: #222121;
+    border-radius: 0.7rem;
+
+}
+
+.gap_div_xs{
+    min-height: 0.5rem;
+}
+
+.gap_div_m{
+    min-height: 2rem;
+}
+
+.feature_section{
+    background-color: #222121;
+    color: var(--secondary)
+}

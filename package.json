@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "baffle": "^0.3.6",
+    "gsap": "^3.12.2",
+    "vanilla-tilt": "^1.8.1"
+  }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background_color: #000000;
+    --text-color: #6c757d;
+
+    --gap1: 2px;
+    --gap2: 4px;
+    --gap3: 8px;
+    --gap4: 16px;
+    --gap5: 32px;
+    --gap6: 64px;
+
+    --t1: 12px;
+    --t2: 14px;
+    --t3: 16px;
+    --t4: 18px;
+    --t5: 20px;
+    --t6: 24px;
+    --t6: 32px;
+    --t7: 48px;
+    --t8: 100px;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    /* Choose a name for your font */
+    src: url('/fonts/AQBL.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hugetext {
+    font-size: var(--t8);
+    font-family: 'CustomFont';
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.05em;
+    margin-bottom: 100px;
+
+}
+
+.effortless_Accounting {
+    font-size: var(--t6);
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.05em;
+    margin-bottom: var(--gap3);
+    margin-top: 15vh;
+
+
+}
+
+.head {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+
+}
+
+.max-width-div {
+    max-width: 80vw;
+    background-image: url("/img/abstract\ bg.png")
+    
+    margin: auto;
+}
+
+.med-title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: var(--gap6);
+    margin-bottom: var(--gap5);
+}
+
+.para {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+}
+
+.mac_img{
+  
+}
+
+.text-maxwidth{
+    max-width: 70%;
+    margin: auto;
+}

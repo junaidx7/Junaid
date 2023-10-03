@@ -1,0 +1,29 @@
+
+:root {
+    --background_color: #000000;
+    --text-color: #6c757d;
+
+    --gap_s: 8px;
+    --gap_m: 16px;
+    --gap_l: 32px;
+    --gap_xl: 56px;
+
+    --gap5: 24px;
+    --gap6: 32px;
+    --gap7: 40px;
+    --gap8: 48px;
+    --gap9: 56px;
+}
+
+
+
+.grid3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+
+}
+
+*{
+ 
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --background_color: #000000;
+    --text-color: #6c757d;
+
+    --gap1: 2px;
+    --gap2: 4px;
+    --gap3: 8px;
+    --gap4: 16px;
+    --gap5: 24px;
+    --gap6: 32px;
+    --gap7: 40px;
+    --gap8: 48px;
+    --gap9: 56px;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.max-width-div {
+    max-width: 1200px;
+    margin: auto;
+    color: red;
+}
+
+body {
+    background-color: var(--background_color);
+    font-family: Arial, sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+h1{
+    font-weight: 200;
+}
+
+h2{
+    font-weight: 200;
+}
+
+h3{
+    font-weight: 200;
+}
+
+p{
+    font-weight: 400;
+}
+
+.button-div {
+    display: flex;
+    gap: var(--gap4);
+}
+
+.bigtext {
+    font-family: 'Inter';
+    font-size: 100px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: -5px;
+    line-height: 90%;
+    margin-top: 10vh;
+    margin-bottom: 8%;
+
+
+}
+
+.junaid {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 120px;
+    color: rgb(174, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.intt {
+    font-size: 18px;
+    width: 60%;
+    color: rgb(208, 208, 222);
+    font-family: Inter;
+    font-weight: 300;
+    line-height: 150%;
+    margin-bottom: 4vh;
+
+}
+
+
+
+button {
+    padding: 10px 20px 10px 20px;
+    font-family: Inter;
+    font-size: 1em;
+    background-color: #dee5eb;
+    border: none;
+    margin-bottom: 8vh;
+
+}
+
+
+.circle {
+    margin-top: 10vh;
+    width: 70px;
+    height: 70px;
+    background-image: url(https://sm.ign.com/t/ign_in/screenshot/default/mg-3_1f1r.1280.png);
+    background-size: cover;
+    /* Cover the entire div with the background image */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* Makes the div a circle by using a border-radius of 50% */
+}
+
+.someofmywork {
+    font-family: 'Inter';
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+
+}
+
+.projects_main_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.project{
+    background-color: #6c757d;
+    aspect-ratio: 1 / 1;
+}
+
+.grid2col{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    margin-bottom: 30px;
+    
+}
+
+
+div{
+    border: 0.5px solid grey;
+}
+
+div{
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.grid4x4{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+
+    align-items: start;
+    grid-template-rows: 1fr 1fr;
+}
+
+.animatedgradient {
+	/* where the magic happens */
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #0077e7, #01d8d1);
+	filter: hue-rotate(0deg);
+	animation: hueShift 6s infinite linear 1s;
+
+    /* font styling*/
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 120px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+@keyframes hueShift {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
