@@ -71,7 +71,4 @@ button:active {
   transition: box-shadow 0.2s ease-in;
 }
 
-#pro1{
-  background-image: url('/cover/pro1.jpg');
-  background-size: cover;
-}
+

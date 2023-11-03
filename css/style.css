@@ -1,6 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+
+@font-face {
+    font-family: 'Tofino-100';
+    src: url('/fonts/Tofino/Tofino-ThinPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-200';
+    src: url('/fonts/Tofino/Tofino-LightPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-300';
+    src: url('/fonts/Tofino/Tofino-BookPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-400';
+    src: url('/fonts/Tofino/Tofino-RegularPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-500';
+    src: url('/fonts/Tofino/Tofino-MediumPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-600';
+    src: url('/fonts/Tofino/Tofino-SemiboldPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-700';
+    src: url('/fonts/Tofino/Tofino-BoldPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-800';
+    src: url('/fonts/Tofino/Tofino-BlackPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
+@font-face {
+    font-family: 'Tofino-900';
+    src: url('/fonts/Tofino/Tofino-UltraPersonal.ttf') format('truetype'),
+        /* For TTF format */
+
+}
+
 :root {
     --background_color: #000000;
     --text-color: #6c757d;
@@ -17,10 +81,19 @@
 }
 
 * {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+p.lede {
+    font-family: 'Tofino-300';
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    width: 75%;
+    color: white;
 }
 
 
@@ -36,32 +109,40 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+
+
 body,
 h1,
 h2,
-h3,
-p,
 ul,
 li {
     color: #ffffff;
     font-family: 'Inter';
 }
 
-h1{
+h3,
+p {
+    color: #ffffff;
+    font-family: 'Tofino';
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+h1 {
     font-weight: 200;
 }
 
-h2{
+h2 {
     font-weight: 200;
 }
 
-h3{
-    font-weight: 200;
-}
-
-p{
+h3 {
     font-weight: 400;
 }
+
+
 
 .button-div {
     display: flex;
@@ -77,8 +158,6 @@ p{
     line-height: 90%;
     margin-top: 10vh;
     margin-bottom: 8%;
-
-
 }
 
 .junaid {
@@ -110,7 +189,6 @@ button {
     background-color: #dee5eb;
     border: none;
     margin-bottom: 8vh;
-
 }
 
 
@@ -132,7 +210,6 @@ button {
     font-family: 'Inter';
     font-weight: 300;
     color: rgb(255, 255, 255);
-
 }
 
 .projects_main_div {
@@ -140,33 +217,60 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
     border: 1px solid rgb(0, 0, 0);
+
+
 }
 
-.project{
+
+
+.project {
     background-color: #6c757d;
     aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
 }
 
-.grid2col{
+.project:hover .proj_info {
+    bottom: 0px;
+    transition: bottom 0.3s ease;
+    /* Add a transition for smooth sliding */
+
+}
+
+.proj_info {
+   background: rgb(13, 0, 37);
+    padding: 1rem;
+    position: absolute;
+    bottom: -100%;
+}
+
+.proj_info * {
+    padding: 0.3em;
+}
+
+
+
+.grid2col {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: start;
     margin-bottom: 30px;
-    
+
 }
 
 
-div{
-    border: 0.5px solid grey;
-}
 
-div{
-    border: 0.5px solid rgb(0, 0, 0);
-}
 
-.grid4x4{
+
+
+.grid4x4 {
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr;
     row-gap: 24px;
     column-gap: 24px;
@@ -176,13 +280,13 @@ div{
 }
 
 .animatedgradient {
-	/* where the magic happens */
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-image: linear-gradient(90deg, #0077e7, #01d8d1);
-	filter: hue-rotate(0deg);
-	animation: hueShift 6s infinite linear 1s;
+    /* where the magic happens */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #0077e7, #01d8d1);
+    filter: hue-rotate(0deg);
+    animation: hueShift 6s infinite linear 1s;
 
     /* font styling*/
     font-family: 'Times New Roman', Times, serif;
@@ -194,11 +298,32 @@ div{
 }
 
 @keyframes hueShift {
-	0% {
-		filter: hue-rotate(0deg);
-	}
+    0% {
+        filter: hue-rotate(0deg);
+    }
 
-	100% {
-		filter: hue-rotate(360deg);
-	}
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#pro1 {
+    background-image: url('/cover/accounting_cover.png');
+    background-size: cover;
+}
+
+.s-gap_div {
+    height: 1rem;
+}
+
+.gap_div_xs {
+    min-height: 0.5rem;
+}
+
+.gap_div_m {
+    min-height: 2rem;
+}
+
+.gap_div {
+    height: 4rem;
 }
