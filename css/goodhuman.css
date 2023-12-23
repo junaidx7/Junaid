@@ -3,19 +3,6 @@
     --background_color2: #0C0F21;
     --text-color: #F2E6CF;
 
-    --h1: 76px;
-    --h2: 43px;
-
-    --h5: 1.5rem;
-    --h6: 24px;
-
-
-    --heading_letterspacing: -0.05em;
-    --heading_lineheight: 1.3;
-
-    --paragraph_letterspacing: -0em;
-    --paragraph_lineheight: 1.6;
-
     /* HSL values */
     --bg: 40, 58%, 88%;
     --bg-secondary: 40, 48%, 80%;
@@ -28,90 +15,52 @@
     /* Progress bar */
     --scrollPercent: 0;
 
-    --gap_xs: 1rem;
-    --gap_s: 1rem;
-    --gap_m: 1rem;
-    --gap_l: 1rem;
-    --gap_xl: 1rem;
-    --gap_xxl: 1rem;
+    --g1: 0.5rem; /* 2px */
+    --g2: 1rem; /* 4px */
+    --g3: 2rem; /* 8px */
+    --g4: 4rem; /* 16px */
+    --g5: 8rem; /* 24px */
+    --g6: 16rem;  /* 32px */
+    --g7: 32rem; /* 40px */
+    --g8: 64rem; /* 48px */
+    --g9: 128rem; /* 56px */
+    --g10: 256rem; /* 64px */
+
+
+    --gap_tiny: 0.25rem; /* 2px */
+    --gap_xs: 0.5rem; /* 2px */
+    --gap__s: 1rem; /* 4px */
+    --gap__m: 2rem; /* 8px */
+    --gap__l: 4rem; /* 16px */
+    --gap_xl: 8rem; /* 24px */
+    --gap_xxl: 16rem;  /* 32px */
+    --gap_xxxl: 32rem; /* 40px */
+    --g8: 64rem; /* 48px */
+    --g9: 128rem; /* 56px */
+    --g10: 256rem; /* 64px */
 
 }
 
-@font-face {
-    font-family: 'Clash-Display';
-    src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype'),
-        /* For TTF format */
-
+.max-width {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: var(--gap__l);
+    padding-right: var(--gap__l);
+    
 }
 
-@font-face {
-    font-family: 'Clash-Grotesk';
-    src: url('/fonts/ClashGrotesk-Variable.ttf') format('truetype'),
-        /* For TTF format */
-
+.max-width-centered {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: var(--gap__l);
+    padding-right: var(--gap__l);
+    text-align: center;
+    
 }
 
-@font-face {
-    font-family: 'Tofino-100';
-    src: url('/fonts/Tofino/Tofino-ThinPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-200';
-    src: url('/fonts/Tofino/Tofino-LightPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-300';
-    src: url('/fonts/Tofino/Tofino-BookPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-400';
-    src: url('/fonts/Tofino/Tofino-RegularPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-500';
-    src: url('/fonts/Tofino/Tofino-MediumPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-600';
-    src: url('/fonts/Tofino/Tofino-SemiboldPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-700';
-    src: url('/fonts/Tofino/Tofino-BoldPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-800';
-    src: url('/fonts/Tofino/Tofino-BlackPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
-}
-
-@font-face {
-    font-family: 'Tofino-900';
-    src: url('/fonts/Tofino/Tofino-UltraPersonal.ttf') format('truetype'),
-        /* For TTF format */
-
+.max-width90 {
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -132,105 +81,6 @@ body {
 }
 
 
-h1 {
-    font-family: 'Clash-Grotesk';
-    font-weight: 500;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-    font-size: 7.3rem;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    font-variant-ligatures: discretionary-ligatures;
-    color: #ffffff;
-}
-
-h2 {
-    font-family: 'Clash-Grotesk';
-    font-size: 4.3rem;
-    font-weight: 550;
-    
-    line-height: 1;
-    color: #ffffff;
-}
-
-h3 {
-    margin-top: 0.4em;
-    font-size: 3.2rem;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-h4 {
-    
-    margin-top: 0.4em;
-    font-size: 4rem;
-    font-weight: 550;
-    font-family: 'Clash-Grotesk';
-    line-height: 1;
-    color: white;
-}
-
-h5 {
-    margin-top: 0.4em;
-    font-size: 1.8rem;
-    line-height: 1.45;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-h6 {
-    font-family: 'Tofino-600';
-    margin-top: 1em;
-    font-size: 1.350rem;
-    line-height: 1.45;
-    text-transform: uppercase;
-    color: #FBB536;
-}
-
-.max-width {
-    max-width: 88rem;
-    margin: auto;
-}
-
-p.lede {
-    font-family: 'Tofino-300';
-    font-size: 2.4rem;
-    line-height: 1.4;
-    letter-spacing: 0;
-    color: #A2A7D0;
-}
-
-p.loda {
-    font-family: 'Tofino-300';
-    font-size: 2.4rem;
-    line-height: 1.4;
-    letter-spacing: 0;
-    color: #ffffff;
-}
-
-p {
-    margin-top: 0.5rem;
-    font-family: 'Tofino-300';
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: #D1D3E8;
-}
-
-p.bold_para {
-    font-family: 'Tofino-600';
-    font-size: 1.8rem;
-
-}
-
-li {
-    font-family: 'Tofino-300';
-    font-size: 1.8rem;
-    margin-left: 1.3rem;
-    margin-top: 1rem;
-    color: #D1D3E8;
-
-}
-
 .fullwidth_img {
 
     max-width: 80%;
@@ -242,16 +92,24 @@ li {
     border-radius: 1rem;
 }
 
-.coverdiv{
-    width: 98vw;
-    background-image: url('/cover/Group\ 475980.png');
+.cover_img_container{
+    width: 98%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
     display: block;
     margin: auto;
     border-radius: 1rem;
+    
+}
+
+.cover_img{
+    width: 100%;
+    aspect-ratio: 1 / 5;
+    background-color: #ff00aa;
+    border-radius: 1rem;
+    stroke: 3px solid greenyellow;
+    min-height: 90vh;
 }
 
 .col2grid {
@@ -261,11 +119,7 @@ li {
 
 }
 
-a.back-link p {
-    margin-top: 8rem;
-    font-size: 2.4rem;
-    font-weight: 600;
-}
+
 
 
 
@@ -276,6 +130,19 @@ a.back-link p {
     background-color: #1a1818;
     border-radius: 0.7rem;
 
+}
+
+.feature2{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.feature-list{
+    display: grid;
+    
 }
 
 .img {
@@ -305,27 +172,33 @@ a.back-link p {
 .feature_section {
     background-color: var(--background_color2);
     color: var(--secondary)
+    
 }
 
 .feature_box{
-    padding: 2rem 1.5rem 2rem 1.5rem;
-
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     border-radius: 0.5rem;
+    padding: 1.5em 1.5em 1.5em 0;
 }
 
 .feature_box:hover{
-    padding: 2rem 1.5rem 2rem 1.5rem;
+    
     background-color: #111D33;
     border-radius: 0.5rem;
 }
 
 .yellow_line{
     border-color :#FBB536;
+    height: auto;
 }
 
 .image2grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: var(--ga);
+
 
   
 }
@@ -353,16 +226,109 @@ table {
     width: 100%;
   }
   
-  td, th {
-    font-family: 'Tofino';
-    border: 1px solid #20233f;
-    color: #D1D3E8;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    font-family: 'Tofino';
-    background-color: var(--background_color2)
+ 
 
+  .text{
+    font-family: 'Array-Wide' ;
+    
   }
+
+  .gap_tiny{
+    height: var(--gap_tiny);
+  }
+
+  .gap_xs{
+    height: var(--gap_xs);
+  }
+
+  .gap_s{
+    height: var(--gap__s);
+  }
+
+  .gap_m{
+    height: var(--gap__m);
+  }
+
+  .gap_l{
+    height: var(--gap__l);
+  }
+
+  .gap_xl{
+    height: var(--gap_xl);
+  }
+
+  .gap_xxl{
+    height: var(--gap_xxl);
+  }
+
+  .gap_xxxl{
+    height: var(--gap_xxxl);
+  }
+
+  
+
+
+  .two_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--gap__s);
+    min-height: 100px;
+  }
+
+
+  .section_headin_img{
+    max-width: 1300px;
+    background-color: #1b0346;
+    height: 300px;
+    margin: auto;
+    border-radius: 1rem;
+  }
+
+
+
+
+.img_grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.img_full-width {
+    grid-column: span 2;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.img_half-width {
+    background-color: #b0b0b0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Optional: Maintain the aspect ratio and cover the entire container */
+}
+
+/* Maintain aspect ratio using padding-bottom trick */
+.img_half-width::before {
+    content: "";
+    display: block;
+    padding-bottom: 75%; /* 4:3 aspect ratio (for example) */
+}
+
+/* Customize the aspect ratio by adjusting the padding-bottom value */
+.img_full-width::before {
+    content: "";
+    display: block;
+    padding-bottom: 30%; /* Adjust this value to your desired aspect ratio */
+}
+
+
+.img_full-width_normal {
+  
+    width: 100vw;
+    height: 0;
+    background-color: #e0e0e0;
+    padding-bottom: 40%;
+}
+
+
+

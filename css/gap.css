@@ -1,0 +1,20 @@
+root {
+  
+    --g1: 0.125rem; /* 2px */
+    --g2: 0.25rem;  /* 4px */
+    --g3: 0.5rem;   /* 8px */
+    --g4: 1rem;     /* 16px */
+    --g5: 1.5rem;   /* 24px */
+    --g6: 2rem;     /* 32px */
+    --g7: 2.5rem;   /* 40px */
+    --g8: 3rem;     /* 48px */
+    --g9: 3.5rem;   /* 56px */
+    --g10: 4rem;    /* 64px */
+
+    --g_tiny:var(--g1);
+    --g_small:var(--g2);
+    --g_medium:var(--g3);
+    --g_large:var(--g4);
+    --huge:var(--g5);
+    
+  }

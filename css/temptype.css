@@ -1,0 +1,103 @@
+h1 {
+    font-family: 'Clash-Grotesk';
+    font-weight: 500;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-size: 7.3rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-variant-ligatures: discretionary-ligatures;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Clash-Grotesk';
+    font-size: 4rem;
+    font-weight: 550;
+    
+    line-height: 1;
+    color: #ffffff;
+}
+
+h3 {
+    margin-top: 0.4em;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h4 {
+    
+    font-size: 35px;
+    
+    font-weight: 550;
+    font-family: 'Clash-Grotesk';
+    line-height: 1;
+    color: white;
+}
+
+h5 {
+    margin-top: 0.4em;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Tofino-600';
+   
+    font-size: 1.350rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: #FBB536;
+}
+
+.max-width {
+    max-width: 88rem;
+    margin: auto;
+}
+
+.max-width90 {
+    max-width: 85%;
+    margin: auto;
+}
+
+p.lede {
+    font-family: 'Tofino-300';
+    font-size: 2.4rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #A2A7D0;
+}
+
+p.loda {
+    font-family: 'Tofino-300';
+    font-size: 2.4rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+p {
+   
+    font-family: 'Tofino-300';
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #D1D3E8;
+}
+
+p.bold_para {
+    font-family: 'Tofino-600';
+    font-size: 1.8rem;
+
+}
+
+li {
+    font-family: 'Tofino-300';
+    font-size: 1.8rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    color: #D1D3E8;
+
+}

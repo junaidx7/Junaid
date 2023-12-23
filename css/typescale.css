@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 14  px;
+}
+
 :root {
     --background_color: #000000;
     --text-color: #6c757d;
@@ -30,9 +34,7 @@
 
 
 
-html {
-    font-size: 14   px;
-}
+
 
 h1 {
     font-size: var(--h1);
