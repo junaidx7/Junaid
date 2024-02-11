@@ -1,52 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
 :root {
-    --background_color: #050715;
-    --background_color2: #0C0F21;
-    --text-color: #F2E6CF;
 
-    /* HSL values */
-    --bg: 40, 58%, 88%;
-    --bg-secondary: 40, 48%, 80%;
-    --primary: 0, 0%, 12%;
-    --img: 0, 0%, 14%;
-    /* text */
-    --secondary: 41, 18%, 36%;
-    /* interactive */
-    --shadow: 40, 58%, 12%;
-    /* Progress bar */
-    --scrollPercent: 0;
+    --maxwidth: 1366px --grey25: #FCFCFD;
+    --grey50: #F9FAFB;
+    --grey100: #F2F4F7;
+    --grey200: #EAECF0;
+    --grey300: #D0D5DD;
+    --grey400: #98A2B3;
+    --grey500: #667085;
+    --grey600: #475467;
+    --grey700: #344054;
+    --grey800: #1D2939;
+    --grey900: #101828;
 
-    --g1: 0.5rem; /* 2px */
-    --g2: 1rem; /* 4px */
-    --g3: 2rem; /* 8px */
-    --g4: 4rem; /* 16px */
-    --g5: 8rem; /* 24px */
-    --g6: 16rem;  /* 32px */
-    --g7: 32rem; /* 40px */
-    --g8: 64rem; /* 48px */
-    --g9: 128rem; /* 56px */
-    --g10: 256rem; /* 64px */
+    --background_color: var(--grey200);
+    --h1: 4.209rem;
+    --h2: 3.157rem;
+    --h3: 2.369rem;
+    --h4: 1.777rem;
+    --h5: 1.5rem;
+    --h6: 1.3rem;
+    --base: 1rem;
+
+    --gap_tiny: 0.25rem;
+    --gap_xs: 0.5rem;
+    --gap__s: 1rem;
+    --gap__m: 2rem;
+    --gap__l: 4rem;
+    --gap_xl: 8rem;
+    --gap_xxl: 16rem;
+    --gap_xxxl: 32rem;
+    --g8: 64rem;
+    --g9: 128rem;
+    --g10: 256rem;
+
+    --gap-section: var(--gap_xl);
 
 
-    --gap_tiny: 0.25rem; /* 2px */
-    --gap_xs: 0.5rem; /* 2px */
-    --gap__s: 1rem; /* 4px */
-    --gap__m: 2rem; /* 8px */
-    --gap__l: 4rem; /* 16px */
-    --gap_xl: 8rem; /* 24px */
-    --gap_xxl: 16rem;  /* 32px */
-    --gap_xxxl: 32rem; /* 40px */
-    --g8: 64rem; /* 48px */
-    --g9: 128rem; /* 56px */
-    --g10: 256rem; /* 64px */
+    --primary-text: #4263EB;
 
 }
 
 .max-width {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding-left: var(--gap__l);
     padding-right: var(--gap__l);
-    
+
+}
+
+.max-width-wider {
+    max-width: 1366px;
+    margin: auto;
+
+}
+
+.max-width-wider-without-textalign {
+    max-width: 1366px;
+    margin: auto;
+
 }
 
 .max-width-centered {
@@ -55,7 +70,7 @@
     padding-left: var(--gap__l);
     padding-right: var(--gap__l);
     text-align: center;
-    
+
 }
 
 .max-width90 {
@@ -78,6 +93,7 @@ html {
 body {
     background-color: var(--background_color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 
@@ -85,14 +101,16 @@ body {
 
     max-width: 80%;
     padding: 5rem 0rem 5rem 0rem;
-   
+
     /* Set the width to 100% of the viewport width */
     display: block;
     margin: auto;
     border-radius: 1rem;
 }
 
-.cover_img_container{
+
+
+.cover_img_container {
     width: 98%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,13 +118,12 @@ body {
     display: block;
     margin: auto;
     border-radius: 1rem;
-    
+
 }
 
-.cover_img{
+.cover_img {
     width: 100%;
     aspect-ratio: 1 / 5;
-    background-color: #ff00aa;
     border-radius: 1rem;
     stroke: 3px solid greenyellow;
     min-height: 90vh;
@@ -132,7 +149,7 @@ body {
 
 }
 
-.feature2{
+.feature2 {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 4rem;
@@ -140,9 +157,9 @@ body {
     margin: auto;
 }
 
-.feature-list{
+.feature-list {
     display: grid;
-    
+
 }
 
 .img {
@@ -155,27 +172,30 @@ body {
 
 .gap_div_xs {
     min-height: 0.5rem;
+
 }
 
 .gap_div_m {
     min-height: 2rem;
+
 }
 
 .gap_div {
     height: 4rem;
+
 }
 
 .s-gap_div {
     height: 1rem;
+
 }
 
 .feature_section {
     background-color: var(--background_color2);
     color: var(--secondary)
-    
 }
 
-.feature_box{
+.feature_box {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -183,36 +203,44 @@ body {
     padding: 1.5em 1.5em 1.5em 0;
 }
 
-.feature_box:hover{
-    
+.feature_box:hover {
+
     background-color: #111D33;
     border-radius: 0.5rem;
 }
 
-.yellow_line{
-    border-color :#FBB536;
+.yellow_line {
+    border-color: #FBB536;
     height: auto;
 }
 
-.image2grid{
+.image2grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--ga);
 
 
-  
+
 }
 
 .image2grid img {
-    max-width: 100%; /* Set maximum width to 100% of the grid cell */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Set maximum width to 100% of the grid cell */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
-.newpaper_grid{
+.newpaper_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+
+}
+
+.left_right_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3em;
- 
 }
 
 /* Table */
@@ -224,111 +252,411 @@ table {
     line-height: 1.5;
     border-collapse: collapse;
     width: 100%;
-  }
-  
- 
+}
 
-  .text{
-    font-family: 'Array-Wide' ;
-    
-  }
 
-  .gap_tiny{
+
+.text {
+    font-family: 'Array-Wide';
+
+}
+
+.gap_tiny {
     height: var(--gap_tiny);
-  }
+}
 
-  .gap_xs{
+.gap_xs {
     height: var(--gap_xs);
-  }
+}
 
-  .gap_s{
+.gap_s {
     height: var(--gap__s);
-  }
+}
 
-  .gap_m{
+.gap_m {
     height: var(--gap__m);
-  }
+}
 
-  .gap_l{
+.gap_l {
     height: var(--gap__l);
-  }
+}
 
-  .gap_xl{
+.gap_xl {
     height: var(--gap_xl);
-  }
+}
 
-  .gap_xxl{
+.gap_xxl {
     height: var(--gap_xxl);
-  }
+}
 
-  .gap_xxxl{
+.gap_xxxl {
     height: var(--gap_xxxl);
-  }
-
-  
+}
 
 
-  .two_img{
+
+
+.two_img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--gap__s);
     min-height: 100px;
-  }
+}
 
 
-  .section_headin_img{
+.section_headin_img {
     max-width: 1300px;
     background-color: #1b0346;
     height: 300px;
     margin: auto;
     border-radius: 1rem;
-  }
+}
 
 
 
 
 .img_grid-container {
+    width: 1366px;
+    margin: auto;
     display: grid;
-    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
+    /* Two columns with equal width */
+
     gap: 10px;
 }
 
 .img_full-width {
+    width: 100%;
+    border-radius: 1rem;
     grid-column: span 2;
-    background-color: #e0e0e0;
-    padding: 20px;
+    background-color: var(--grey300);
+
+}
+
+.img_middle {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .img_half-width {
-    background-color: #b0b0b0;
+    background-color: var(--grey300);
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Optional: Maintain the aspect ratio and cover the entire container */
+    border-radius: 1rem;
+    height: auto;
+    object-fit: cover;
+    /* Optional: Maintain the aspect ratio and cover the entire container */
 }
 
 /* Maintain aspect ratio using padding-bottom trick */
 .img_half-width::before {
     content: "";
     display: block;
-    padding-bottom: 75%; /* 4:3 aspect ratio (for example) */
+    padding-bottom: 75%;
+    /* 4:3 aspect ratio (for example) */
 }
 
 /* Customize the aspect ratio by adjusting the padding-bottom value */
 .img_full-width::before {
     content: "";
     display: block;
-    padding-bottom: 30%; /* Adjust this value to your desired aspect ratio */
+    padding-bottom: 30%;
+    /* Adjust this value to your desired aspect ratio */
 }
 
 
 .img_full-width_normal {
-  
     width: 100vw;
     height: 0;
     background-color: #e0e0e0;
     padding-bottom: 40%;
 }
 
+section {
+    margin-bottom: var(--gap-section);
+    border: 0px solid grey
+}
 
 
+
+
+.max-width-wider p {
+    max-width: 800px;
+    margin: auto;
+}
+
+.blue-box {
+    max-width: 1366px;
+    background: radial-gradient(100.67% 58.24% at 21.28% 80.65%, rgba(10, 148, 255, 0.61) 0%, rgba(10, 148, 255, 0.00) 100%), #B8DEFD;
+
+}
+
+
+.con {
+    max-width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "A A"
+        "B C";
+}
+
+.A {
+    grid-area: A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 110, 199);
+    border-radius: 1rem;
+    background: radial-gradient(100.67% 58.24% at 21.28% 80.65%, rgba(10, 148, 255, 0.61) 0%, rgba(10, 148, 255, 0.00) 100%), #B8DEFD;
+}
+
+.B {
+    grid-area: B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 6%;
+    background: radial-gradient(102.13% 102.9% at 0% 100%, rgba(137, 91, 241, 0.60) 0%, rgba(137, 91, 241, 0.00) 100%), #DCCFFB;
+}
+
+.C {
+    grid-area: C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    border-radius: 1rem;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    background: linear-gradient(180deg, rgba(255, 181, 54, 0.40) 0%, #FFB536 100%);
+}
+
+
+.img02 {
+    max-width: 100%;
+    height: auto;
+}
+
+.grey-box {
+    height: auto;
+    width: 1366px;
+    border-radius: 0.625rem;
+    background: var(--grey300);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.reddit-grid-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    margin: auto;
+    gap: 2rem;
+}
+
+
+.visualdesign-bg {
+    background-color: var(--grey600);
+}
+
+
+.police-banner-text {
+    font-family: 'nacelle-semibold';
+    white-space: nowrap;
+    color: var(--grey200);
+
+}
+
+.police-banner-bg{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: hidden;
+    transform: rotate(-1deg);
+}
+
+.con2 {
+    max-width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "D D"
+        "E F"
+        "G G";
+}
+
+.D{
+
+    grid-area: D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--grey300);
+    border-radius: 1rem;
+
+}
+
+.E{
+
+    grid-area: E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+.F{
+
+    grid-area: F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 1rem;
+
+}
+
+.G{
+
+    grid-area: G;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey200);
+    border: 1px solid var(--grey300);
+    border-radius: 1rem;
+
+}
+
+.lighter-text-on-dark{
+    color: var(--grey25);
+}
+
+.usability-box{
+    max-width: 1050px;
+    background-color: var(--grey100);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+   
+    background: linear-gradient(180deg,#FFFFFF,#F2F4F7);
+    padding-top: var(--gap_l);
+    padding-bottom: var(--gap_l);
+}
+
+.footer-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+
+
+}
+.police-banner-bg-footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--grey200);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: hidden;
+    transform: rotate(-1deg);
+}
+
+.police-banner-text-footer{
+    font-family: 'nacelle-semibold';
+    white-space: nowrap;
+    color: var(--grey400);
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------- */
+
+
+
+footer .dark {
+   
+    background-color: #000000;
+    padding-top: var(--gap_l);
+    padding-bottom: var(--gap_l);
+  }
+  
+  .footer-container-dark {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+  
+  
+  }
+  .police-banner-bg-footer-dark{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--grey200);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: hidden;
+    transform: rotate(-1deg);
+  }
+  
+  .police-banner-text-footer-dark{
+    font-family: 'nacelle-semibold';
+    white-space: nowrap;
+    color: var(--grey400);
+  
+  }
+  
+  
+  /*--------------------------------------------------------------------------------- */
+  
+  
+  
