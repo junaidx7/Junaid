@@ -4,7 +4,8 @@
 
 :root {
 
-    --maxwidth: 1366px --grey25: #FCFCFD;
+    --maxwidth: 1200px;
+     --grey25: #FCFCFD;
     --grey50: #F9FAFB;
     --grey100: #F2F4F7;
     --grey200: #EAECF0;
@@ -45,7 +46,7 @@
 }
 
 .max-width {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     padding-left: var(--gap__l);
     padding-right: var(--gap__l);
@@ -91,7 +92,7 @@ html {
 }
 
 body {
-    background-color: var(--background_color);
+    background-color :white;
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -316,7 +317,7 @@ table {
 
 
 .img_grid-container {
-    width: 1366px;
+    width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -399,7 +400,7 @@ section {
 
 
 .con {
-    max-width: 1366px;
+    max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -450,7 +451,7 @@ section {
 
 
 .img02 {
-    max-width: 100%;
+    max-width: 89%;
     height: auto;
 }
 
@@ -491,7 +492,7 @@ section {
 .police-banner-bg{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--grey800);
+    background-color: #E7FF56 !important;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -516,11 +517,6 @@ section {
 .D{
 
     grid-area: D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--grey300);
     border-radius: 1rem;
 
 }
@@ -532,8 +528,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 1rem;
+    background: radial-gradient(73.37% 61.73% at 25.12% 34.7%, rgba(155, 111, 255, 0.20) 0%, rgba(120, 120, 255, 0.19) 41%, rgba(10, 148, 255, 0.16) 68.5%, rgba(255, 255, 255, 0.16) 100%), var(--color-grey-grey100, #F2F4F7);
+    border-radius: 0.75rem;
 
 }
 
@@ -544,7 +540,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: var(--grey25);
     border-radius: 1rem;
 
 }
@@ -552,12 +548,8 @@ section {
 .G{
 
     grid-area: G;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grey200);
-    border: 1px solid var(--grey300);
+    max-width: 100%;
+    margin: auto;
     border-radius: 1rem;
 
 }
@@ -653,6 +645,11 @@ footer .dark {
     white-space: nowrap;
     color: var(--grey400);
   
+  }
+
+  .sitemap_img{
+    max-width: 80%;
+    border-radius: 0.75rem;
   }
   
   
