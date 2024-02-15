@@ -7,49 +7,49 @@
 :root {
 
     --base-font-size: 16px;
-  
+
     --h1: 4rem;
     --h2: 3rem;
     --h3: 2.438rem;
     --h4: 1.953rem;
     --h5: 1.438rem;
     --h6: 1.25rem;
-  
-    --p-tiny:0.75rem;
-    --p-small:1rem;
-    --p-medium:1rem;
-    --p-large:1.438rem;
-  
-    --p-title-small:1rem;
-    
-    --overline-medium:1rem;
-    --overline-small:0.875rem;
-  
-    --grey25:#FCFCFD;
-    --grey50:#F9FAFB;
-    --grey100:#F2F4F7;
-    --grey200:#EAECF0;
-    --grey300:#D0D5DD;
-    --grey400:#98A2B3;
-    --grey500:#667085;
-    --grey600:#475467;
-    --grey700:#344054;
-    --grey800:#1D2939;
-    --grey900:#101828;
-  
+
+    --p-tiny: 0.75rem;
+    --p-small: 1rem;
+    --p-medium: 1rem;
+    --p-large: 1.438rem;
+
+    --p-title-small: 1rem;
+
+    --overline-medium: 1rem;
+    --overline-small: 0.875rem;
+
+    --grey25: #FCFCFD;
+    --grey50: #F9FAFB;
+    --grey100: #F2F4F7;
+    --grey200: #EAECF0;
+    --grey300: #D0D5DD;
+    --grey400: #98A2B3;
+    --grey500: #667085;
+    --grey600: #475467;
+    --grey700: #344054;
+    --grey800: #1D2939;
+    --grey900: #101828;
+
     --primary-text: #4263EB;
-    --text: var(--grey900); 
-    --subtext: var(--grey600);  
-    --subsubtext: grey-300 ;   
-  
-    
+    --text: var(--grey900);
+    --subtext: var(--grey600);
+    --subsubtext: grey-300;
+
+
     --border-minimal: var(--grey200);
-    --border-subtle:var(--grey300);
-    --border-moderate:var(--grey400);
-    --border-bold:var(--grey50);
-  
-  
-  
+    --border-subtle: var(--grey300);
+    --border-moderate: var(--grey400);
+    --border-bold: var(--grey50);
+
+
+
     --gap_tiny: 0.25rem;
     /* 2px */
     --gap_xs: 0.5rem;
@@ -66,18 +66,18 @@
     /* 32px */
     --gap_xxxl: 32rem;
     /* 40px */
-  
+
     --g8: 64rem;
     /* 48px */
     --g9: 128rem;
     /* 56px */
     --g10: 256rem;
     /* 64px */
-  
+
     --main-color: #FFC530;
     --paragraph-color: #E8EEFE;
-  
-  }
+
+}
 
 
 @font-face {
@@ -301,12 +301,12 @@ button {
 
 
 .project {
-    border-radius: 0.5rem;
-    background-color: #6c757d;
     aspect-ratio: 1 / 0.7;
     position: relative;
     overflow: hidden;
     display: flex;
+
+
 
     &:hover {
         transform: scale(1.05);
@@ -322,42 +322,42 @@ button {
 }
 
 .proj_info {
-   background: rgb(11, 11, 11);
+    background: rgb(11, 11, 11);
     padding: 1rem;
     width: 100%;
     position: absolute;
     bottom: -100%;
 
 
-    
+
 }
 
 .proj_info .subtext_proj {
-   font-family: 'IBM Plex Sans',sans-serif;
-   font-weight: 300;
-   color: var(--grey400);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: var(--grey400);
 
- 
-  }
 
-  .proj_info h3 {
-    font-family: 'IBM Plex Sans',sans-serif;
+}
+
+.proj_info h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
 
- 
-  
-   }
 
-   .proj_info .chip{
+
+}
+
+.proj_info .chip {
     font-size: 0.7rem;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
-    padding:  0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     border-radius: 1rem;
     background-color: #0077e7;
     display: inline-block;
-   }
- 
+}
+
 
 
 
@@ -415,7 +415,17 @@ button {
 }
 
 #pro1 {
-    background-image: url('/img/accounting/acc_blue.png');
+    background-image: url('/img/acc_cover.png');
+    background-size: cover;
+}
+
+#pro2 {
+    background-image: url('/img/digital_cover.png');
+    background-size: cover;
+}
+
+#pro3 {
+    background-image: url('/img/ds_cover.png');
     background-size: cover;
 }
 
@@ -434,10 +444,3 @@ button {
 .gap_div {
     height: 4rem;
 }
-
-
-
-
-
-
-
