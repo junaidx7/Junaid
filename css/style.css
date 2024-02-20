@@ -626,6 +626,37 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
+
+
+    :root {
+
+        --gap_tiny: 0.25rem;
+        /* 2px */
+        --gap_xs: 0.25rem;
+        /* 2px */
+        --gap_s: 0.5rem;
+        /* 4px */
+        --gap_m: 1rem;
+        /* 8px */
+        --gap_l: 2rem;
+        /* 16px */
+        --gap_xl: 4rem;
+        /* 24px */
+        --gap_xxl: 8rem;
+        /* 32px */
+        --gap_xxxl: 16rem;
+        /* 40px */
+
+        --g8: 64rem;
+        /* 48px */
+        --g9: 128rem;
+        /* 56px */
+        --g10: 256rem;
+        /* 64px */
+    }
+
+
+
     .bigtext {
 
         font-family: 'Inter';
@@ -726,37 +757,6 @@ footer {
 
 
     }
-
-
-    :root {
-
-        --gap_tiny: 0.25rem;
-        /* 2px */
-        --gap_xs: 0.25rem;
-        /* 2px */
-        --gap_s: 0.5rem;
-        /* 4px */
-        --gap_m: 1rem;
-        /* 8px */
-        --gap_l: 2rem;
-        /* 16px */
-        --gap_xl: 4rem;
-        /* 24px */
-        --gap_xxl: 8rem;
-        /* 32px */
-        --gap_xxxl: 16rem;
-        /* 40px */
-
-        --g8: 64rem;
-        /* 48px */
-        --g9: 128rem;
-        /* 56px */
-        --g10: 256rem;
-        /* 64px */
-    }
-
-
-
 
 
     .gap_tiny {
