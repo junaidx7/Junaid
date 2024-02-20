@@ -58,7 +58,6 @@
     --border-bold: var(--grey50);
 
 
-
     --gap_tiny: 0.25rem;
     /* 2px */
     --gap_xs: 0.5rem;
@@ -586,8 +585,42 @@ footer {
     color: white !important;
 }
 
-.footer-maincontainer{
+.footer-maincontainer {
     display: block;
+}
+
+
+
+.gap_tiny {
+    height: var(--gap_tiny);
+}
+
+.gap_xs {
+    height: var(--gap_xs);
+}
+
+.gap_s {
+    height: var(--gap__s);
+}
+
+.gap_m {
+    height: var(--gap__m);
+}
+
+.gap_l {
+    height: var(--gap__l);
+}
+
+.gap_xl {
+    height: var(--gap_xl);
+}
+
+.gap_xxl {
+    height: var(--gap_xxl);
+}
+
+.gap_xxxl {
+    height: var(--gap_xxxl);
 }
 
 
@@ -654,7 +687,7 @@ footer {
         font-size: 2rem;
         white-space: nowrap;
         color: #4f4f4f;
-    
+
     }
 
     .footer-container {
@@ -664,8 +697,8 @@ footer {
         justify-content: space-around;
         max-width: 1100px;
         margin: auto;
-    
-    
+
+
     }
 
 
@@ -679,7 +712,7 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    .footer-maincontainer{
+    .footer-maincontainer {
         display: none;
     }
 
@@ -690,8 +723,72 @@ footer {
         justify-content: space-around;
         max-width: 90%;
         margin: auto;
-    
-    
+
+
+    }
+
+
+    :root {
+
+        --gap_tiny: 0.25rem;
+        /* 2px */
+        --gap_xs: 0.25rem;
+        /* 2px */
+        --gap_s: 0.5rem;
+        /* 4px */
+        --gap_m: 1rem;
+        /* 8px */
+        --gap_l: 2rem;
+        /* 16px */
+        --gap_xl: 4rem;
+        /* 24px */
+        --gap_xxl: 8rem;
+        /* 32px */
+        --gap_xxxl: 16rem;
+        /* 40px */
+
+        --g8: 64rem;
+        /* 48px */
+        --g9: 128rem;
+        /* 56px */
+        --g10: 256rem;
+        /* 64px */
+    }
+
+
+
+
+
+    .gap_tiny {
+        height: var(--gap_tiny);
+    }
+
+    .gap_xs {
+        height: var(--gap_xs);
+    }
+
+    .gap_s {
+        height: var(--gap__s);
+    }
+
+    .gap_m {
+        height: var(--gap__m);
+    }
+
+    .gap_l {
+        height: var(--gap__l);
+    }
+
+    .gap_xl {
+        height: var(--gap_xl);
+    }
+
+    .gap_xxl {
+        height: var(--gap_xxl);
+    }
+
+    .gap_xxxl {
+        height: var(--gap_xxxl);
     }
 
 
