@@ -660,7 +660,7 @@ footer {
     .bigtext {
 
         font-family: 'Inter';
-        font-size: 3.22rem;
+        font-size: 3.5rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
         letter-spacing: -5px;
@@ -682,7 +682,7 @@ footer {
         padding-left: 0.5rem;
         font-family: 'Times New Roman', Times, serif;
         font-style: italic;
-        font-size: 4rem;
+        font-size: 4.3rem;
         position: relative;
         overflow: hidden;
 
