@@ -16,14 +16,14 @@
 
 <body>
 
-    
+
 
 
     <div class="max-width-div">
-        
+
         <div class="gap_xl"></div>
         <h1 class="bigtext"> <span class="animatedgradient">Junaid </span> designs<br>intuitive products.</h1>
-        
+
         <div style="height: 5rem;"></div>
 
 
@@ -35,7 +35,7 @@
             user-centric web and mobile solutions across diverse industries, including Finance & Accounting, E-commerce,
             Healthcare, Education etc.. </p>
 
-            <div style="height: 1rem;"></div>
+        <div style="height: 1rem;"></div>
 
 
         <p class="intt"></p>
@@ -44,7 +44,7 @@
             <a href="https://drive.google.com/file/d/19AODfKqacBF0SPcbvBt9XlzMNNoSCq-V/view?usp=sharing"
                 target="_blank"> <button>Resume</button> </a>
 
-           
+
             <a href="https://www.linkedin.com/in/uiuxdesignerjunaid/" target="_blank"> <button>Linkedin</button> </a>
         </div>
 
@@ -60,7 +60,7 @@
 
             <div class="projects_main_div">
 
-                <a href="/html/accounting.html">
+                <a id="responsivelink-1" href="/html/accounting.html">
 
                     <div class="project" id='pro1' data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
@@ -80,7 +80,7 @@
 
                 </a>
 
-                <a href="/html/digital-menu.html">
+                <a id="responsivelink-2" href="/html/digital-menu.html">
 
                     <div class="project" id='pro2' data-tilt data-tilt-glare data-tilt-max-glare="0.8">
 
@@ -100,7 +100,7 @@
 
                 </a>
 
-                <a href="/html/design-system.html">
+                <a id="responsivelink-3" href="/html/design-system.html">
 
 
                     <div class="project" id='pro3' data-tilt data-tilt-glare data-tilt-max-glare="0.8">
@@ -142,16 +142,28 @@
                 </a>
 
 
-
-
-
-
             </div>
 
 
         </div>
 
     </div>
+
+   
+
+    <div id="popup" class="popup" >
+
+        <img style="width: 3rem;" src="/img/under-construction.png" alt="">
+
+        <p style="margin-top: 1rem;" > Mobile View under progress</p>
+       
+       Please view on desktop
+
+       <button id="close-btn" style=" width: 100%; margin-top: 1.3rem;">close</button>
+
+    </div>
+
+    <div class="overlay" id="overlay"></div>
 
     <!--Footer -------------------------------------------------------------------------->
 
@@ -230,7 +242,7 @@
 
 
 
-       
+
 
         <p id="designed-text" class="tiny">Designed with love and peer pressure.</p>
 
@@ -242,6 +254,8 @@
 
 
     <!-- <script type="text/javascript" src="\js\vanilla-tilt.js"></script> -->
+
+    <script type="text/javascript" src="/disable-link-on-phone.js"></script>
 
     <script type="module" src="/js/annotate.js"></script>
 

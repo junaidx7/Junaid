@@ -621,9 +621,35 @@ footer {
 }
 
 
+.popup {
+    min-width: 80%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5rem;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 19, 19);
+    padding: 2rem;
+    border: 1px solid #282828;
+    box-shadow: 0 0 10px rgba(87, 87, 87, 0.1);
+    z-index: 9999;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9998; /* Ensure the overlay is below the popup */
+}
+
+
 @media only screen and (max-width: 767px) {
-
-
 
     :root {
 
@@ -802,7 +828,24 @@ footer {
         text-align: center; 
         margin-top: 4rem;
     }
-    
+
+    .project:hover .proj_info {
+        display: none;
+      
+      }
+
+      .project {
+        aspect-ratio: 1 / 0.7;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+
+        &:hover {
+            transform: scale(1);
+            transition: 0.3s ease;
+        }
+    }
+      
 
 
 
@@ -812,3 +855,4 @@ footer {
 
 
 }
+

@@ -80,3 +80,41 @@ button:active {
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
+
+@media only screen and (max-width: 767px) {
+
+
+button {
+
+  position: relative;
+  border-radius: 8px;
+  border: 1.5px solid #0A94FF;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+
+}
+
+button:active {
+
+
+  position: relative;
+  border-radius: 8px;
+  border: 1.5px solid #0A94FF;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+
+
+}
+
+
+}
