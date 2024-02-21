@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    var link = document.getElementById("responsivelink-1");
+    var link1 = document.getElementById("responsivelink-1");
+    var link2 = document.getElementById("responsivelink-2");
+    var link3 = document.getElementById("responsivelink-3");
     var popup = document.getElementById("popup");
     var closeButton = document.getElementById("close-btn");
     var overlay =document.getElementById("overlay");
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Handle link click event
-    link.addEventListener("click", function (event) {
+    link1.addEventListener("click", function (event) {
         // Prevent the default action
         event.preventDefault();
 
@@ -24,7 +26,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else {
             // Otherwise, redirect to the target page
-            window.location.href = link.getAttribute("href");
+            window.location.href = link1.getAttribute("href");
+        }
+    });
+
+    link2.addEventListener("click", function (event) {
+        // Prevent the default action
+        event.preventDefault();
+
+        // If it's a mobile device, show the popup
+        if (isMobileDevice()) {
+            popup.style.display = "block";
+            overlay.style.display = "block";
+            
+
+        } else {
+            // Otherwise, redirect to the target page
+            window.location.href = link1.getAttribute("href");
+        }
+    });
+
+    link3.addEventListener("click", function (event) {
+        // Prevent the default action
+        event.preventDefault();
+
+        // If it's a mobile device, show the popup
+        if (isMobileDevice()) {
+            popup.style.display = "block";
+            overlay.style.display = "block";
+            
+
+        } else {
+            // Otherwise, redirect to the target page
+            window.location.href = link1.getAttribute("href");
         }
     });
 
