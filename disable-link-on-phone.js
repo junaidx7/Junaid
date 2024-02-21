@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else {
             // Otherwise, redirect to the target page
-            window.location.href = link1.getAttribute("href");
+            window.location.href = link2.getAttribute("href");
         }
     });
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else {
             // Otherwise, redirect to the target page
-            window.location.href = link1.getAttribute("href");
+            window.location.href = link3.getAttribute("href");
         }
     });
 
