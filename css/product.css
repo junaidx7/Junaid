@@ -46,7 +46,7 @@
 }
 
 .max-width {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding-left: var(--gap__l);
     padding-right: var(--gap__l);
