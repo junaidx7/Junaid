@@ -520,7 +520,7 @@ footer {
 
 .police-banner-text-footer {
 
-    font-family: 'clash';
+    font-family: 'clash',sans-serif;
     font-weight: 500;
     font-size: 3.2rem;
     white-space: nowrap;
