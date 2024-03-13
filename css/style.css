@@ -293,13 +293,7 @@ h3 {
 
 
 
-button {
-    padding: 10px 20px 10px 20px;
-    font-family: Inter;
-    font-size: 1rem;
-    border: none;
 
-}
 
 
 
@@ -338,8 +332,6 @@ button {
     position: relative;
     overflow: hidden;
     display: flex;
-
-
 
     &:hover {
         transform: scale(1.05);

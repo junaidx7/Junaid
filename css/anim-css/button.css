@@ -4,7 +4,7 @@
 
 
 button {
-
+  padding: 10px 20px 10px 20px;
   position: relative;
   border-radius: 8px;
   border: 1.5px solid #0A94FF;
@@ -73,6 +73,8 @@ button::before {
     left: 100%;
   }
 }
+
+
 
 button:active {
   box-shadow: 0 0 0 0 transparent;
